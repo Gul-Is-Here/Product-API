@@ -12,7 +12,7 @@ class Networking {
         List<dynamic> data = jsonDecode(response.body) as List;
         List<Product> productData =
             data.map((json) => Product.fromJson(json)).toList();
-        print(productData);
+        print(productData.first.id);
         return productData;
       } else {
         throw Exception(' Failed to load Data');
