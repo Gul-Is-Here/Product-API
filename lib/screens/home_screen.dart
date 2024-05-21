@@ -58,6 +58,7 @@ class HomeScreen extends StatelessWidget {
                                   },
                                   child: Image.network(
                                     productData[index].image,
+                                    
                                     fit: BoxFit.cover,
                                   ),
                                 ),

@@ -51,7 +51,12 @@ class ProductDetailScreen extends StatelessWidget {
                       ),
                       Row(
                         children: [
-                          Icon(Icons.star, color: Colors.amber),
+                          Icon(
+                            Icons.star,
+                            color: Colors.amber,
+                            size: 40
+                            ,
+                          ),
                           Text(
                             productData.rating.rate.toString(),
                             style: TextStyle(
